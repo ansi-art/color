@@ -1,0 +1,41 @@
+{
+    "name": "@ansi-art/color",
+    "version": "3.0.0-alpha1",
+    "main": "color.js",
+    "devDependencies": {
+        "@commitlint/cli": "^17.4.4",
+        "@commitlint/config-conventional": "^17.4.4",
+        "chai": "^4.3.7",
+        "eslint": "^8.35.0",
+        "husky": "^8.0.3",
+        "jsdoc": "^3.6.3",
+        "jsdoc-to-markdown": "^8.0.0",
+        "mocha": "^10.2.0",
+        "pre-commit": "^1.2.2",
+        "tsd-jsdoc": "^2.5.0"
+    },
+    "scripts": {
+        "generate-types": "./node_modules/.bin/jsdoc -t node_modules/tsd-jsdoc/dist -r src/. -d types",
+        "generate-typescript-root": "cat ./types/types.d.ts > .d.ts",
+        "generate-docs": "for i in src/*.js; do ./node_modules/.bin/jsdoc2md \"${i}\" > \"docs/$(basename ${i%.js}).md\"; done",
+        "next-patch": "pysemver bump patch $(jq .version package.json| tr -d \\\")",
+        "next-minor": "pysemver bump minor $(jq .version package.json| tr -d \\\")",
+        "next-major": "pysemver bump major $(jq .version package.json| tr -d \\\")",
+        "increment-patch": "npm version patch",
+        "increment-minor": "npm version minor",
+        "increment-major": "npm version major",
+        "test": "./node_modules/.bin/mocha",
+        "lint": "./node_modules/.bin/eslint *.js src/*.js test/*.js",
+        "container-test": "docker build . -t  ansi-art/char-subgrid -f ./containers/test.dockerfile; docker logs --follow \"$(docker run -d ansi-art/char-subgrid)\""
+        
+    },
+    "precommit.colors": true,
+    "precommit": [
+        "lint",
+        "test",
+        "container-test",
+        "generate-types",
+        "generate-typescript-root",
+        "generate-docs"
+    ]
+}
