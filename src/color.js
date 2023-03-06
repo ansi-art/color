@@ -10,7 +10,7 @@
     }
 }(this, function(){
     /**
-     * A module that shouts hello!
+     * This provides an abstraction for holding and transforming color representations
      * @module @ansi-art/color/src/color
      */
     
@@ -21,7 +21,7 @@
             case '8bit':
             case 8:
         }
-    }
+    };
     /**
      * The default constructor for SubGridTransformer
      * @class Color

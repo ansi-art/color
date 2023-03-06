@@ -10,7 +10,7 @@
     }
 }(this, function(){
     /**
-     * A module that shouts hello!
+     * This provides an abstraction for doing work in a color space
      * @module @ansi-art/color/src/context
      */
     

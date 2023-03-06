@@ -10,7 +10,7 @@
     }
 }(this, function(Distance, Color){
     /**
-     * A module that shouts hello!
+     * This provides an abstraction for performing color adhoc evaluations given a specific context (space + medium)
      * @module @ansi-art/color/src/palette
      */
     
