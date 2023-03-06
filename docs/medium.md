@@ -1,7 +1,7 @@
 <a name="module_@ansi-art/color/src/medium"></a>
 
 ## @ansi-art/color/src/medium
-A module that shouts hello!
+This provides an abstraction for the color profiles associated with drawing output
 
 
 * [@ansi-art/color/src/medium](#module_@ansi-art/color/src/medium)

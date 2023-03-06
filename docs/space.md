@@ -1,7 +1,7 @@
 <a name="module_@ansi-art/color/src/space"></a>
 
 ## @ansi-art/color/src/space
-A module that shouts hello!
+This provides default set of colors in a given color space
 
 
 * [@ansi-art/color/src/space](#module_@ansi-art/color/src/space)

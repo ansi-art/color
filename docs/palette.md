@@ -1,7 +1,7 @@
 <a name="module_@ansi-art/color/src/palette"></a>
 
 ## @ansi-art/color/src/palette
-A module that shouts hello!
+This provides an abstraction for performing color adhoc evaluations given a specific context (space + medium)
 
 
 * [@ansi-art/color/src/palette](#module_@ansi-art/color/src/palette)

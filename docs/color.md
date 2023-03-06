@@ -1,7 +1,7 @@
 <a name="module_@ansi-art/color/src/color"></a>
 
 ## @ansi-art/color/src/color
-A module that shouts hello!
+This provides an abstraction for holding and transforming color representations
 
 
 * [@ansi-art/color/src/color](#module_@ansi-art/color/src/color)

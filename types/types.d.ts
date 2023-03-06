@@ -1,5 +1,5 @@
 /**
- * A module that shouts hello!
+ * This provides an abstraction for holding and transforming color representations
  */
 declare module "@ansi-art/color/src/color" {
     /**
@@ -25,7 +25,7 @@ declare module "@ansi-art/color/src/color" {
 }
 
 /**
- * A module that shouts hello!
+ * This provides an abstraction for doing work in a color space
  */
 declare module "@ansi-art/color/src/context" {
     /**
@@ -41,18 +41,18 @@ declare module "@ansi-art/color/src/context" {
 }
 
 /**
- * A module that shouts hello!
+ * get the distance between the provided color components
  */
 declare module "@ansi-art/color/src/distance" {
     /**
-     * get the mapped color for a particular color in this context
+     * get the distance between the provided color components
      * @returns wrappedDistanceFn
      */
     function colorDistance(distanceFn: (...params: any[]) => any): (...params: any[]) => any;
 }
 
 /**
- * A module that shouts hello!
+ * This provides an abstraction for the color profiles associated with drawing output
  */
 declare module "@ansi-art/color/src/medium" {
     /**
@@ -68,7 +68,7 @@ declare module "@ansi-art/color/src/medium" {
 }
 
 /**
- * A module that shouts hello!
+ * This provides an abstraction for performing color adhoc evaluations given a specific context (space + medium)
  */
 declare module "@ansi-art/color/src/palette" {
     /**
@@ -89,7 +89,7 @@ declare module "@ansi-art/color/src/palette" {
 }
 
 /**
- * A module that shouts hello!
+ * This provides default set of colors in a given color space
  */
 declare module "@ansi-art/color/src/space" {
     /**

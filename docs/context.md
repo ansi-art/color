@@ -1,7 +1,7 @@
 <a name="module_@ansi-art/color/src/context"></a>
 
 ## @ansi-art/color/src/context
-A module that shouts hello!
+This provides an abstraction for doing work in a color space
 
 
 * [@ansi-art/color/src/context](#module_@ansi-art/color/src/context)
