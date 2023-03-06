@@ -26,7 +26,8 @@
         "increment-major": "npm version major",
         "test": "./node_modules/.bin/mocha",
         "lint": "./node_modules/.bin/eslint *.js src/*.js test/*.js",
-        "container-test": "docker build . -t  ansi-art/char-subgrid -f ./containers/test.dockerfile; docker logs --follow \"$(docker run -d ansi-art/char-subgrid)\"",
+        "add-generated-files-to-commit": "git add docs/*.md; git add types/*.ts; git add .d.ts",
+        "container-test": "docker build . -t  ansi-art/color -f ./containers/test.dockerfile; docker logs --follow \"$(docker run -d ansi-art/color)\"",
         "tag-current-version":"git tag -a $(echo $(cat package.json | jq '(\"v\" + .version)' --unbuffered) | tr -d \"\\\"\") -m \"Release Version\"",
         "npm-publish": "npm run tag-current-version; git push --follow-tags; npm publish",
         "generate-artifacts" : "npm run generate-types; npm run generate-typescript-root; npm run generate-docs"
