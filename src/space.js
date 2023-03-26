@@ -45,6 +45,11 @@
             agg[key+'_bg'] = '\0'+'33['+(basicColorIndices[key]+10)+'m';
             return agg;
         }, {});
+        this.namedColorIndices = Object.keys(basicColorIndices).reduce((agg, key)=>{
+            agg[key] = basicColorIndices[key]+'';
+            agg[key+'_bg'] = (basicColorIndices[key]+10)+'';
+            return agg;
+        }, {});
         //this.codes = objectMap(controlCodes, colorCodes);
         this.ansi256 = ansi16.concat(ansi256GreyScale).concat(ansi256Additions);
         this.ansi16 = ansi16;

@@ -1,6 +1,6 @@
 {
     "name": "@ansi-art/color",
-    "version": "3.0.0-alpha1",
+    "version": "3.0.0-alpha2",
     "main": "color.js",
     "devDependencies": {
         "@commitlint/cli": "^17.4.4",
