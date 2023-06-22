@@ -7,9 +7,9 @@ const {
     Palette, 
     Space, 
     Medium
-} = require('../color');
+} = require('../color.cjs');
 
-const sampleDistance = require('../src/distances/sample-distance');
+const { sampleDistance } = require('../dist/distances/sample-distance.cjs');
 
 describe('@ansi-art/color', ()=>{
     describe('@ansi-art/color/src/color', ()=>{

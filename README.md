@@ -47,7 +47,7 @@ just run `npm run test` or `npm run container-test`
 Contribution
 ------------
 
-Please PR contributions against `develop` with [jsdoc](https://jsdoc.app/) and [mocha](https://mochajs.org/) [tests]()  for the new functionality in place.
+Please PR contributions against `develop` with [jsdoc](https://jsdoc.app/) and [mocha](https://mochajs.org/) [tests]()  for the new functionality in place for both commonjs and module suites.
 
 The project uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) and the [Fork + PR](https://gist.github.com/Chaser324/ce0505fbed06b947d962) development model.
 
