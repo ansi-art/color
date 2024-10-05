@@ -1,8 +1,32 @@
 {
     "name": "@ansi-art/color",
-    "version": "3.0.0-alpha3",
+    "version": "3.0.0-alpha4",
     "main": "color.cjs",
     "module": "color.mjs",
+    "type":"module",
+    "exports": {
+        ".": {
+            "import": "./color.mjs",
+            "require": "./color.cjs"
+        },
+        "./src/tools.mjs": {
+            "import": "./color.mjs",
+            "require": "./color.cjs"
+        },
+        "./dist/tools.cjs": {
+            "import": "./color.mjs",
+            "require": "./color.cjs"
+        },
+        "./index.js": {
+            "import": "./color.mjs",
+            "require": "./color.cjs"
+        }
+        ,
+        "./tools.js": {
+            "import": "./color.mjs",
+            "require": "./color.cjs"
+        }
+    },
     "devDependencies": {
         "@babel/cli": "^7.22.5",
         "@babel/core": "^7.22.5",
